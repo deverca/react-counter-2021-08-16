@@ -1,9 +1,9 @@
 import Counter from "./Counter";
 
-function CounterGroup(){
+function CounterGroup(props){
 
 function generateCounterList(){
-    return new Array(5).fill(Date.now());
+    return new Array(props.counterSize).fill(Date.now());
 }
 
 const counterList = generateCounterList();
@@ -20,5 +20,4 @@ return(
 )
 
 }
-
 export default CounterGroup;
