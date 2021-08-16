@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "../Styles/Counter.css"
 
 function Counter(){
     const [number,setNumber] = useState(0);
@@ -11,11 +11,12 @@ function decrease(){
     setNumber(number-1);
    }
 return(
-<div>
+<div className="counter-div">
+<button className="button" onClick={decrease}> - </button>
+<span className="text-style"> {number} </span>
+<button className="button" onClick={increase}> + </button>
 
-<button onClick={increase}>+</button>
-<span>{number}</span>
-<button onClick={decrease}>-</button>
+
 
 </div>
 
