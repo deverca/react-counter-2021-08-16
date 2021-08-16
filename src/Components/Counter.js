@@ -10,7 +10,6 @@ function increase(){
 function decrease(){
     setNumber(number-1);
    }
-
 return(
 <div>
 
@@ -19,7 +18,6 @@ return(
 <button onClick={decrease}>-</button>
 
 </div>
-
 
 );
 
