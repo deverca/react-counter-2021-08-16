@@ -3,11 +3,11 @@ import './App.css';
 import Counter from './Components/Counter';
 import CounterGroup from './Components/CounterGroup';
 import CounterSizeGenerator from './Components/CounterSizeGenerator';
+import MultipleCounter from './Components/MultipleCounter';
 function App() {
   return (
     <div className="App">
-      <CounterSizeGenerator></CounterSizeGenerator>
-     <CounterGroup></CounterGroup>
+     <MultipleCounter></MultipleCounter>
     </div>
   );
 }
